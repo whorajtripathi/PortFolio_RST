@@ -1,0 +1,364 @@
+/* =====================================================
+   ABOUT SECTION
+   ===================================================== */
+
+.about__grid {
+  display: grid;
+  /* // divide the page into two section of 1:1.6 ratio */
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+
+  align-items: center;
+
+  opacity: 0;
+}
+
+/* Animation Reveal */
+
+.about__grid.animate-in {
+  opacity: 1;
+}
+
+/* =====================================================
+   IMAGE WRAPPER
+   ===================================================== */
+
+.about__image-wrap {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+/* =====================================================
+   AVATAR
+   ===================================================== */
+
+.about__avatar {
+  position: relative;
+
+  width: 260px;
+
+  height: 260px;
+}
+
+/* Avatar Placeholder */
+
+.avatar-placeholder {
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 30px;
+
+  background: #1e1e2c;
+
+  border: 2px solid rgba(255,255,255,0.15);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+/* Initials */
+
+.avatar-initials {
+  font-family: 'Syne', sans-serif;
+
+  font-size: 4rem;
+
+  font-weight: 800;
+
+  color: #64ffda;
+}
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin-inline: auto;
+}
+/* =====================================================
+   AVATAR RINGS
+   ===================================================== */
+
+.avatar-ring {
+  position: absolute;
+
+  inset: -8px;
+
+  border: 1.5px solid #64ffda;
+
+  border-radius: 38px;
+
+  opacity: 0.3;
+
+  animation: pulse 3s ease infinite;
+}
+
+.avatar-ring--2 {
+  inset: -20px;
+
+  opacity: 0.15;
+
+  animation-delay: 1.5s;
+}
+
+/* Pulse Animation */
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+/* =====================================================
+   BADGE
+   ===================================================== */
+
+.about__badge {
+  position: absolute;
+
+  bottom: -20px;
+
+  right: -20px;
+
+  background: #1e1e2c;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 12px;
+
+  padding: 12px 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  white-space: nowrap;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* Badge Content */
+
+.badge-icon {
+  font-size: 1.4rem;
+}
+
+.badge-title {
+  font-size: 0.85rem;
+
+  font-weight: 600;
+
+  color: #e8e8f0;
+}
+
+.badge-sub {
+  font-size: 0.75rem;
+
+  color: #9090aa;
+}
+
+/* =====================================================
+   PARAGRAPHS
+   ===================================================== */
+
+.about__para {
+  font-size: 1rem;
+
+  color: #9090aa;
+
+  margin-bottom: 18px;
+
+  line-height: 1.8;
+}
+
+/* Strong */
+
+.about__para strong {
+  color: #e8e8f0;
+}
+
+/* Emphasis */
+
+.about__para em {
+  color: #64ffda;
+
+  font-style: normal;
+}
+
+/* =====================================================
+   FACTS GRID
+   ===================================================== */
+
+.facts-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 32px;
+}
+
+/* =====================================================
+   FACT CARD
+   ===================================================== */
+
+.fact-card {
+  background: #1e1e2c;
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+/* Hover */
+
+.fact-card:hover {
+  border-color: #64ffda;
+
+  transform: translateY(-2px);
+}
+
+/* Emoji */
+
+.fact-emoji {
+  font-size: 1.8rem;
+
+  display: block;
+
+  margin-bottom: 8px;
+}
+
+/* Value */
+
+.fact-value {
+  font-family: 'Syne', sans-serif;
+
+  font-size: 1.1rem;
+
+  font-weight: 700;
+
+  color: #e8e8f0;
+}
+
+/* Label */
+
+.fact-label {
+  font-size: 0.8rem;
+
+  color: #9090aa;
+
+  margin-top: 4px;
+}
+
+/* =====================================================
+   SECTIONS (shared)
+   ===================================================== */
+
+.section {
+  padding: 100px 0;
+}
+
+/* Alternate Background */
+
+.section:nth-child(even) {
+  background: #111118;
+}
+
+/* =====================================================
+   SECTION HEADER
+   ===================================================== */
+
+.section-header {
+  text-align: center;
+
+  margin-bottom: 64px;
+}
+
+/* Eyebrow */
+
+.section-eyebrow {
+  font-family: 'Space Mono', monospace;
+
+  font-size: 0.8rem;
+
+  color: #64ffda;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+/* Title */
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+
+  font-weight: 700;
+
+  color: #e8e8f0;
+
+  margin-bottom: 16px;
+}
+
+/* Subtitle */
+
+.section-subtitle {
+  font-size: 1.05rem;
+
+  color: #9090aa;
+
+  max-width: 520px;
+
+  margin: 0 auto;
+}
+
+/* =====================================================
+   ANIMATE IN
+   ===================================================== */
+
+.animate-in {
+  animation: slideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =====================================================
+   KEYFRAMES
+   ===================================================== */
+
+@keyframes slideUp {
+
+  from {
+    opacity: 0;
+
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}

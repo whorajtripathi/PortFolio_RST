@@ -63,6 +63,7 @@
   list-style: none;
   display: flex;
   gap: 4px;
+  
 }
 
 .nav-link {
@@ -85,6 +86,13 @@
   align-items: center;
 
   gap: 2px;
+  border: none;
+
+background: transparent;
+
+outline: none;
+
+cursor: pointer;
 }
 
 .nav-link:hover {
