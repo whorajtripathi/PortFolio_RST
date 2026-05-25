@@ -1,0 +1,137 @@
+.skills__tabs{
+    display:flex;
+    justify-content: center;
+    gap:8px;
+    margin-bottom: 48px;
+}
+
+.tab-btn{
+    padding:10px 24px;
+    border-radius: 100px;
+    border: 1.5px solid rgba(255,255,255,0.15);
+    font-size:0.9rem;
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.15s ease;
+}
+
+.tab-btn:hover {
+  border-color: #64ffda;
+  color: #022d15;
+}
+
+.tab-btn--active{
+    background: #64ffda;
+    border-color: #64ffda;
+    color: #0a0a0f;
+    font-weight: 600;
+}
+
+/* =====================================================
+   SKILL BARS
+   ===================================================== */
+
+.skills__bars{
+    max-width: 680px;
+    margin: 0 auto 64px;
+}
+
+/* Single Skill */
+.skill-bar{
+     margin-bottom: 24px;
+}
+
+/* Header */
+
+.skill-bar__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+/* Skill Name */
+.skill-bar__name{
+    font-size: 0.925rem;
+    font-weight: 500;
+    color: #e8e8f0;
+}
+
+.skill-bar__level {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: #9090aa;
+}
+
+/* =====================================================
+   TRACK
+   ===================================================== */
+
+.skill-bar__track{
+    height: 6px;
+    background: #1e1e2c;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+/* =====================================================
+   FILL
+   ===================================================== */
+
+.skill-bar__fill{
+    height:100%;
+    border-radius: 3px;
+    transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 0%;
+}
+
+/* =====================================================
+   SKILL CLOUD
+   ===================================================== */
+
+.skills__cloud {
+  text-align: center;
+}
+
+/* Cloud Label */
+
+.cloud-label {
+  font-size: 0.85rem;
+
+  color: #9090aa;
+
+  margin-bottom: 16px;
+}
+
+/* =====================================================
+   TECH BUBBLES
+   ===================================================== */
+
+.tech-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Single Bubble */
+
+.tech-bubble {
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: #1e1e2c;
+  border: 1px solid rgba(0,0,0,0.08);
+  font-size: 0.8rem;
+  color: #9090aa;
+  transition: all 0.15s ease;
+}
+
+/* Hover */
+
+.tech-bubble:hover {
+  border-color: #64ffda;
+
+  color: #64ffda;
+
+  transform: translateY(-2px);
+}
